@@ -1,0 +1,22 @@
+{
+  "name": "polyrepo-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "core-cli dev",
+    "build": "core-cli build"
+  },
+  "workspaces": [
+    "core/*",
+    "base/*",
+    "--dev/site",
+    "dev/shared",
+    "dev/cms"
+  ],
+  "devDependencies": {
+    "@app/client": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
