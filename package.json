@@ -1,20 +1,28 @@
 {
-  "name": "polyrepo-test",
+  "name": "coordiinator",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
+  "bin": {
+    "project-flow": "./cli.mjs"
+  },
   "scripts": {
-    "dev": "core-cli dev",
-    "build": "core-cli build"
+    "dev": "turbo run dev",
+    "build": "turbo run build"
   },
   "workspaces": [
-    "core/*",
-    "base/*",
-    "--dev/site",
-    "dev/shared",
-    "dev/cms"
+    "apps/*",
+    "packages/core"
   ],
   "devDependencies": {
     "@app/client": "workspace:*"
+  },
+  "dependencies": {
+    "turbo": "latest",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0",
+    "simple-git": "^3.27.0"
   },
   "keywords": [],
   "author": "",
