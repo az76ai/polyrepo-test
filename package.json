@@ -1,5 +1,5 @@
 {
-  "name": "polyrepo-test",
+  "name": "coordiinator",
   "private": true,
   "packageManager": "pnpm@10.5.0",
   "bin": {
