@@ -1,0 +1,3 @@
+[submodule "apps/dev"]
+	path = apps/dev
+	url = git@github.com:az76ai/dev.git
