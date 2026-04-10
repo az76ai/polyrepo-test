@@ -2,6 +2,9 @@
   "name": "polyrepo-test",
   "private": true,
   "packageManager": "pnpm@10.5.0",
+  "bin": {
+    "project-flow": "./cli.mjs"
+  },
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
